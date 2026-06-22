@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f7f1e7;
+  --paper-deep: #efe5d6;
+  --ink: #22201d;
+  --muted: #716a62;
+  --vermillion: #c83b2f;
+  --vermillion-dark: #9f2a22;
+  --line: #ded3c3;
+  --card: rgba(255, 253, 249, 0.92);
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-serif: "Yu Mincho", "Hiragino Mincho ProN", Georgia, serif;
+}
+
+body {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 91% 5%, rgba(200, 59, 47, 0.08) 0 92px, transparent 93px),
+    linear-gradient(30deg, transparent 0 47.5%, rgba(106, 96, 82, 0.028) 48% 50%, transparent 50.5% 100%),
+    linear-gradient(150deg, transparent 0 47.5%, rgba(106, 96, 82, 0.022) 48% 50%, transparent 50.5% 100%),
+    var(--paper);
+  background-size: auto, 64px 110px, 64px 110px, auto;
+  color: var(--ink);
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+}
+
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 3px solid rgba(200, 59, 47, 0.35);
+  outline-offset: 3px;
+}
+
+::selection { background: rgba(200, 59, 47, 0.18); }
+
+.font-japanese { font-family: "Yu Mincho", "Hiragino Mincho ProN", Georgia, serif; }
+
+.seigaiha {
+  background-image:
+    radial-gradient(circle at 100% 150%, transparent 24%, rgba(255,255,255,.16) 25% 28%, transparent 29%),
+    radial-gradient(circle at 0 150%, transparent 24%, rgba(255,255,255,.16) 25% 28%, transparent 29%);
+  background-size: 36px 20px;
+}
+
+.asanoha-border {
+  background-image:
+    linear-gradient(30deg, transparent 47%, rgba(200,59,47,.22) 48% 52%, transparent 53%),
+    linear-gradient(150deg, transparent 47%, rgba(200,59,47,.22) 48% 52%, transparent 53%);
+  background-size: 18px 30px;
+}

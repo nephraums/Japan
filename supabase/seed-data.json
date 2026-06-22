@@ -1,0 +1,1139 @@
+{
+  "trip": {
+    "name": "Japan 2026 Family Trip",
+    "start_date": "2026-07-04",
+    "end_date": "2026-07-12",
+    "theme": "Modern Japanese family travel planner"
+  },
+  "users": [
+    {
+      "display_name": "Nigel",
+      "role": "parent"
+    },
+    {
+      "display_name": "Sarah",
+      "role": "parent"
+    },
+    {
+      "display_name": "Harrison",
+      "role": "teen"
+    },
+    {
+      "display_name": "Evelyn",
+      "role": "teen"
+    }
+  ],
+  "itinerary_events": [
+    {
+      "date": "2026-07-04",
+      "city": "Osaka",
+      "title": "JQ13 Sydney to Osaka (Kansai)",
+      "slot": "morning",
+      "start_time": "11:00",
+      "end_time": "19:50",
+      "status": "Confirmed",
+      "start_point": "Sydney Airport T1 International",
+      "end_point": "Kansai International Airport",
+      "map_url": "",
+      "food_ideas": "Takoyaki, ramen, gyoza, convenience-store desserts",
+      "teen_interest": "First neon Osaka experience",
+      "notes": "Jetstar JQ13. Depart Sydney 11:00 and arrive Osaka Kansai 19:50 on 4 July; all times local.",
+      "flight_details": {
+        "booking_reference": "ULJNYF",
+        "fare": "Starter Plus",
+        "cabin": "Economy",
+        "segments": [
+          {
+            "flight_number": "JQ13",
+            "date": "2026-07-04",
+            "departure_time": "11:00",
+            "arrival_date": "2026-07-04",
+            "arrival_time": "19:50",
+            "origin": "Sydney Airport",
+            "origin_terminal": "T1 International",
+            "destination": "Kansai International Airport",
+            "destination_terminal": null,
+            "aircraft": "Boeing 787 Dreamliner",
+            "duration": "9 hr 50 min"
+          }
+        ],
+        "passengers": [
+          { "name": "Nigel Ephraums", "seat": "34A", "carry_on": "7 kg", "checked_baggage": "20 kg" },
+          { "name": "Sarah Wilkinson", "seat": "34B", "carry_on": "7 kg", "checked_baggage": "20 kg" },
+          { "name": "Evelyn Ephraums", "seat": "34C", "carry_on": "7 kg", "checked_baggage": "20 kg" },
+          { "name": "Harrison Ephraums", "seat": "34D", "carry_on": "7 kg", "checked_baggage": "20 kg" }
+        ]
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "city": "Osaka",
+      "title": "Arrive Kansai International Airport",
+      "slot": "afternoon",
+      "start_time": "19:50",
+      "end_time": "20:30",
+      "status": "Confirmed",
+      "start_point": "Kansai International Airport aircraft gate",
+      "end_point": "Kansai International Airport arrivals hall",
+      "map_url": "",
+      "food_ideas": "Takoyaki, ramen, gyoza, convenience-store desserts",
+      "teen_interest": "First neon Osaka experience",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-04",
+      "city": "Osaka",
+      "title": "Transfer to hotel; late Dotonbori food if energy allows",
+      "slot": "evening",
+      "start_time": "20:30",
+      "end_time": "23:30",
+      "status": "To plan",
+      "start_point": "Kansai International Airport",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Takoyaki, ramen, gyoza, convenience-store desserts",
+      "teen_interest": "First neon Osaka experience",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-05",
+      "city": "Osaka",
+      "title": "Kuromon Ichiba Market",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "Draft",
+      "start_point": "Osaka hotel",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Okonomiyaki, takoyaki, kushikatsu",
+      "teen_interest": "Streetwear, vintage, snacks, photo spots",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-05",
+      "city": "Osaka",
+      "title": "Dotonbori, Shinsaibashi, Amerikamura, Orange Street",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "Draft",
+      "start_point": "Osaka hotel",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Okonomiyaki, takoyaki, kushikatsu",
+      "teen_interest": "Streetwear, vintage, snacks, photo spots",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-05",
+      "city": "Osaka",
+      "title": "Shinsekai; dinner in Ura Namba or Hozenji Yokocho",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "Draft",
+      "start_point": "Osaka hotel",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Okonomiyaki, takoyaki, kushikatsu",
+      "teen_interest": "Streetwear, vintage, snacks, photo spots",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-06",
+      "city": "Osaka",
+      "title": "Universal Studios Japan or Osaka Castle",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "Decision needed",
+      "start_point": "Osaka hotel",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Theme park snacks, ramen, izakaya food",
+      "teen_interest": "Super Nintendo World or Pokémon Center",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-06",
+      "city": "Osaka",
+      "title": "USJ full day or Umeda/Pokémon Center/shopping",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "Decision needed",
+      "start_point": "Osaka hotel",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Theme park snacks, ramen, izakaya food",
+      "teen_interest": "Super Nintendo World or Pokémon Center",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-06",
+      "city": "Osaka",
+      "title": "Easy Namba dinner or teamLab Botanical Garden Osaka",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "Decision needed",
+      "start_point": "Osaka hotel",
+      "end_point": "Osaka hotel",
+      "map_url": "",
+      "food_ideas": "Theme park snacks, ramen, izakaya food",
+      "teen_interest": "Super Nintendo World or Pokémon Center",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-07",
+      "city": "Kyoto",
+      "title": "Train Osaka to Kyoto; Fushimi Inari",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "Draft",
+      "start_point": "APA HOTEL&RESORT OSAKA NAMBA EKIMAE TOWER",
+      "end_point": "MIMARU Kyoto Kawaramachi Gojo",
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=APA%20HOTEL%26RESORT%20OSAKA%20NAMBA%20EKIMAE%20TOWER&destination=MIMARU%20Kyoto%20Kawaramachi%20Gojo&travelmode=transit",
+      "food_ideas": "Matcha, soba, tofu, wagashi",
+      "teen_interest": "Classic Kyoto photo streets",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-07",
+      "city": "Kyoto",
+      "title": "Nishiki Market; Kiyomizu-dera; Ninenzaka/Sannenzaka",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "Draft",
+      "start_point": "Osaka hotel",
+      "end_point": "Kyoto hotel",
+      "map_url": "",
+      "food_ideas": "Matcha, soba, tofu, wagashi",
+      "teen_interest": "Classic Kyoto photo streets",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-07",
+      "city": "Kyoto",
+      "title": "Gion, Pontocho, Kamo River dinner",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "Draft",
+      "start_point": "Osaka hotel",
+      "end_point": "Kyoto hotel",
+      "map_url": "",
+      "food_ideas": "Matcha, soba, tofu, wagashi",
+      "teen_interest": "Classic Kyoto photo streets",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-08",
+      "city": "Tokyo",
+      "title": "Optional Arashiyama or slow Kyoto morning",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "Decision needed",
+      "start_point": "MIMARU Kyoto Kawaramachi Gojo",
+      "end_point": "MIMARU Kyoto Kawaramachi Gojo",
+      "map_url": "",
+      "food_ideas": "Ramen, sushi, yakitori, Japanese curry",
+      "teen_interest": "Shibuya Crossing, Shibuya Sky",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-08",
+      "city": "Tokyo",
+      "title": "Shinkansen to Tokyo; check in",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "To book transfers",
+      "start_point": "MIMARU Kyoto Kawaramachi Gojo",
+      "end_point": "Cozy APT Stay in Center Tokyo -SHIBUYA",
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=MIMARU%20Kyoto%20Kawaramachi%20Gojo&destination=Cozy%20APT%20Stay%20in%20Center%20Tokyo%20SHIBUYA&travelmode=transit",
+      "food_ideas": "Ramen, sushi, yakitori, Japanese curry",
+      "teen_interest": "Shibuya Crossing, Shibuya Sky",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-08",
+      "city": "Tokyo",
+      "title": "Shibuya Crossing, Hachiko, Shibuya Sky, dinner",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "To book transfers",
+      "start_point": "Kyoto hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Ramen, sushi, yakitori, Japanese curry",
+      "teen_interest": "Shibuya Crossing, Shibuya Sky",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-09",
+      "city": "Tokyo",
+      "title": "Meiji Shrine; Harajuku; Takeshita Street",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "Decision needed",
+      "start_point": "Tokyo hotel / Tokyu Plaza",
+      "end_point": "Hachiko statue / Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Crepes, matcha, ramen, yakitori",
+      "teen_interest": "Harajuku, Nintendo Tokyo, Pokémon Center, Shibuya Parco",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-09",
+      "city": "Tokyo",
+      "title": "Teen independent block: Tokyu Plaza to Hachiko via Cat Street/Miyashita/Shibuya Parco",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "Draft",
+      "start_point": "Tokyo hotel / Tokyu Plaza",
+      "end_point": "Hachiko statue / Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Crepes, matcha, ramen, yakitori",
+      "teen_interest": "Harajuku, Nintendo Tokyo, Pokémon Center, Shibuya Parco",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-09",
+      "city": "Tokyo",
+      "title": "Shibuya Sky or dinner in Ebisu/Nakameguro",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "Draft",
+      "start_point": "Tokyo hotel / Tokyu Plaza",
+      "end_point": "Hachiko statue / Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Crepes, matcha, ramen, yakitori",
+      "teen_interest": "Harajuku, Nintendo Tokyo, Pokémon Center, Shibuya Parco",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-10",
+      "city": "Tokyo",
+      "title": "Travel to Maihama / Tokyo Disney Resort",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "Decision needed",
+      "start_point": "Tokyo hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Disney snacks, casual dinner",
+      "teen_interest": "DisneySea, Disneyland, Fantasy Springs",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-10",
+      "city": "Tokyo",
+      "title": "Tokyo DisneySea and/or Disneyland",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "To book",
+      "start_point": "Tokyo hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Disney snacks, casual dinner",
+      "teen_interest": "DisneySea, Disneyland, Fantasy Springs",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-10",
+      "city": "Tokyo",
+      "title": "Return to Tokyo hotel",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "To book",
+      "start_point": "Tokyo hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Disney snacks, casual dinner",
+      "teen_interest": "DisneySea, Disneyland, Fantasy Springs",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-11",
+      "city": "Tokyo",
+      "title": "Asakusa, Senso-ji, Nakamise",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "To book teamLab",
+      "start_point": "Tokyo hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Sushi, ramen, yakitori, depachika",
+      "teen_interest": "Akihabara arcades, teamLab",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-11",
+      "city": "Tokyo",
+      "title": "Akihabara gaming/anime/electronics",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "To book teamLab",
+      "start_point": "Tokyo hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Sushi, ramen, yakitori, depachika",
+      "teen_interest": "Akihabara arcades, teamLab",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-11",
+      "city": "Tokyo",
+      "title": "teamLab; final dinner in Ebisu or Nakameguro",
+      "slot": "evening",
+      "start_time": "18:00",
+      "end_time": "21:00",
+      "status": "To book teamLab",
+      "start_point": "Tokyo hotel",
+      "end_point": "Tokyo hotel",
+      "map_url": "",
+      "food_ideas": "Sushi, ramen, yakitori, depachika",
+      "teen_interest": "Akihabara arcades, teamLab",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-12",
+      "city": "Tokyo → Narita",
+      "title": "Final shopping / breakfast",
+      "slot": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "To plan",
+      "start_point": "Tokyo hotel",
+      "end_point": "Narita Airport",
+      "map_url": "",
+      "food_ideas": "Final ramen/sushi, airport snacks",
+      "teen_interest": "Last-minute shopping",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-12",
+      "city": "Tokyo → Narita",
+      "title": "Lunch; collect bags; transfer to Narita",
+      "slot": "afternoon",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "status": "To plan",
+      "start_point": "Cozy APT Stay in Center Tokyo -SHIBUYA",
+      "end_point": "Narita Airport",
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Cozy%20APT%20Stay%20in%20Center%20Tokyo%20SHIBUYA&destination=Narita%20International%20Airport%20Terminal%203&travelmode=transit",
+      "food_ideas": "Final ramen/sushi, airport snacks",
+      "teen_interest": "Last-minute shopping",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-12",
+      "city": "Tokyo → Narita",
+      "title": "JQ26 + JQ953 Tokyo to Sydney via Cairns",
+      "slot": "evening",
+      "start_time": "20:05",
+      "end_time": "23:59",
+      "status": "Confirmed",
+      "start_point": "Narita International Airport T3",
+      "end_point": "Sydney via Cairns",
+      "map_url": "",
+      "food_ideas": "Final ramen/sushi, airport snacks",
+      "teen_interest": "Last-minute shopping",
+      "notes": "Jetstar JQ26 departs Narita at 20:05 on 12 July, connecting in Cairns to JQ953 and arriving Sydney at 09:45 on 13 July; all times local.",
+      "flight_details": {
+        "booking_reference": "ML16WF",
+        "fare": "Starter Plus",
+        "cabin": "Economy",
+        "segments": [
+          {
+            "flight_number": "JQ26",
+            "date": "2026-07-12",
+            "departure_time": "20:05",
+            "arrival_date": "2026-07-13",
+            "arrival_time": "04:30",
+            "origin": "Narita International Airport",
+            "origin_terminal": "Terminal 3",
+            "destination": "Cairns Airport",
+            "destination_terminal": null,
+            "aircraft": "Boeing 787 Dreamliner",
+            "duration": "7 hr 25 min"
+          },
+          {
+            "flight_number": "JQ953",
+            "date": "2026-07-13",
+            "departure_time": "06:45",
+            "arrival_date": "2026-07-13",
+            "arrival_time": "09:45",
+            "origin": "Cairns Airport",
+            "origin_terminal": "Domestic Terminal",
+            "destination": "Sydney Airport",
+            "destination_terminal": null,
+            "aircraft": "Airbus A320",
+            "duration": "3 hr"
+          }
+        ],
+        "passengers": [
+          { "name": "Nigel Ephraums", "seat": "51A", "carry_on": "7 kg", "checked_baggage": "20 kg" },
+          { "name": "Sarah Wilkinson", "seat": "51B", "carry_on": "7 kg", "checked_baggage": "20 kg" },
+          { "name": "Evelyn Ephraums", "seat": "51C", "carry_on": "7 kg", "checked_baggage": "20 kg" },
+          { "name": "Harrison Ephraums", "seat": "51D", "carry_on": "7 kg", "checked_baggage": "20 kg" }
+        ]
+      }
+    }
+  ],
+  "bookings": [
+    {
+      "Booking": "Osaka accommodation",
+      "City": "Osaka",
+      "Date": "2026-07-04 to 2026-07-07",
+      "Priority": "High",
+      "Status": "Confirmed",
+      "Owner": "Nigel",
+      "Link": "https://www.google.com/maps/search/?api=1&query=APA%20HOTEL%26RESORT%20OSAKA%20NAMBA%20EKIMAE%20TOWER%2C%20Osaka%2C%20Japan",
+      "Notes": "Reservation 260608007781 · 3 nights · one connecting fourth room for four guests · arrival 22:00 · ¥72,920"
+    },
+    {
+      "Booking": "Kyoto accommodation",
+      "City": "Kyoto",
+      "Date": "2026-07-07 to 2026-07-08",
+      "Priority": "High",
+      "Status": "Confirmed",
+      "Owner": "Nigel",
+      "Link": "https://www.google.com/maps/search/?api=1&query=MIMARU%20Kyoto%20Kawaramachi%20Gojo%2C%20Kyoto%2C%20Japan",
+      "Notes": "MIMARU Kyoto Kawaramachi Gojo · confirmation 5065114101 · one night · apartment with 5 single beds for four guests · check-in 15:00–22:00 · ¥41,393 payment amount"
+    },
+    {
+      "Booking": "Tokyo accommodation",
+      "City": "Tokyo",
+      "Date": "2026-07-08 to 2026-07-12",
+      "Priority": "High",
+      "Status": "Confirmed",
+      "Owner": "Nigel",
+      "Link": "https://www.google.com/maps/search/?api=1&query=Cozy%20APT%20Stay%20in%20Center%20Tokyo%20SHIBUYA%2C%20Dogenzaka%2C%20Tokyo%2C%20Japan",
+      "Notes": "Cozy APT Stay in Center Tokyo -SHIBUYA · confirmation 6382485346 · four nights · apartment with balcony for four guests · check-in 16:00–23:00 · ¥304,760 total"
+    },
+    {
+      "Booking": "Universal Studios Japan",
+      "City": "Osaka",
+      "Date": "2026-07-06",
+      "Priority": "Medium/High",
+      "Status": "Decide",
+      "Owner": "Family",
+      "Link": "TBC",
+      "Notes": "Do this if budget allows"
+    },
+    {
+      "Booking": "USJ Express Pass",
+      "City": "Osaka",
+      "Date": "2026-07-06",
+      "Priority": "High if doing USJ",
+      "Status": "Decide",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "Worth considering in July"
+    },
+    {
+      "Booking": "Shinkansen to Tokyo",
+      "City": "Kyoto/Tokyo",
+      "Date": "2026-07-08",
+      "Priority": "High",
+      "Status": "To book",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "Check oversized luggage rules"
+    },
+    {
+      "Booking": "Shibuya Sky",
+      "City": "Tokyo",
+      "Date": "2026-07-08 or 2026-07-09",
+      "Priority": "High",
+      "Status": "To book",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "Sunset preferred"
+    },
+    {
+      "Booking": "Tokyo Disney Resort",
+      "City": "Tokyo",
+      "Date": "2026-07-10",
+      "Priority": "High",
+      "Status": "To book",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "DisneySea / Park Hopper preferred"
+    },
+    {
+      "Booking": "teamLab",
+      "City": "Tokyo",
+      "Date": "2026-07-11",
+      "Priority": "High",
+      "Status": "To book",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "Borderless preferred"
+    },
+    {
+      "Booking": "eSIM / roaming",
+      "City": "All",
+      "Date": "Before departure",
+      "Priority": "Medium",
+      "Status": "To arrange",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "Reliable data essential"
+    },
+    {
+      "Booking": "Travel insurance",
+      "City": "All",
+      "Date": "Before departure",
+      "Priority": "High",
+      "Status": "To arrange",
+      "Owner": "Nigel",
+      "Link": "TBC",
+      "Notes": "Family policy"
+    }
+  ],
+  "restaurants": [
+    {
+      "City": "Osaka",
+      "Area": "Dotonbori / Namba",
+      "Type": "Street food",
+      "Idea": "Takoyaki crawl",
+      "Priority": "High",
+      "Booking needed": "No",
+      "Link": "TBC",
+      "Notes": "Easy first-night or snack option"
+    },
+    {
+      "City": "Osaka",
+      "Area": "Namba",
+      "Type": "Casual dinner",
+      "Idea": "Okonomiyaki",
+      "Priority": "High",
+      "Booking needed": "Maybe",
+      "Link": "TBC",
+      "Notes": "Classic Osaka food"
+    },
+    {
+      "City": "Osaka",
+      "Area": "Shinsekai",
+      "Type": "Casual dinner",
+      "Idea": "Kushikatsu",
+      "Priority": "High",
+      "Booking needed": "No",
+      "Link": "TBC",
+      "Notes": "Good for retro Osaka evening"
+    },
+    {
+      "City": "Osaka",
+      "Area": "Kuromon",
+      "Type": "Market snacks",
+      "Idea": "Seafood, wagyu skewers, fruit, mochi",
+      "Priority": "High",
+      "Booking needed": "No",
+      "Link": "TBC",
+      "Notes": "Best grazing stop"
+    },
+    {
+      "City": "Kyoto",
+      "Area": "Nishiki Market",
+      "Type": "Market snacks",
+      "Idea": "Matcha, wagashi, seafood, pickles",
+      "Priority": "High",
+      "Booking needed": "No",
+      "Link": "TBC",
+      "Notes": "Better as grazing than formal lunch"
+    },
+    {
+      "City": "Kyoto",
+      "Area": "Pontocho",
+      "Type": "Dinner",
+      "Idea": "Yakitori / izakaya / Kyoto-style dinner",
+      "Priority": "High",
+      "Booking needed": "Maybe",
+      "Link": "TBC",
+      "Notes": "Good evening atmosphere"
+    },
+    {
+      "City": "Kyoto",
+      "Area": "Gion",
+      "Type": "Dessert",
+      "Idea": "Matcha cafe",
+      "Priority": "Medium",
+      "Booking needed": "Maybe",
+      "Link": "TBC",
+      "Notes": "Good teen/social content angle"
+    },
+    {
+      "City": "Tokyo",
+      "Area": "Shibuya",
+      "Type": "Casual",
+      "Idea": "Ramen / sushi / izakaya",
+      "Priority": "High",
+      "Booking needed": "Maybe",
+      "Link": "TBC",
+      "Notes": "Easy arrival night"
+    },
+    {
+      "City": "Tokyo",
+      "Area": "Harajuku",
+      "Type": "Snacks",
+      "Idea": "Crepes, character snacks, bubble tea",
+      "Priority": "Medium",
+      "Booking needed": "No",
+      "Link": "TBC",
+      "Notes": "Teen day"
+    },
+    {
+      "City": "Tokyo",
+      "Area": "Ebisu",
+      "Type": "Dinner",
+      "Idea": "Yakitori / izakaya",
+      "Priority": "High",
+      "Booking needed": "Yes",
+      "Link": "TBC",
+      "Notes": "Strong final dinner option"
+    },
+    {
+      "City": "Tokyo",
+      "Area": "Nakameguro",
+      "Type": "Dinner",
+      "Idea": "Local-feeling restaurants and cafes",
+      "Priority": "High",
+      "Booking needed": "Maybe",
+      "Link": "TBC",
+      "Notes": "Good adult/family area"
+    },
+    {
+      "City": "Tokyo",
+      "Area": "Akihabara",
+      "Type": "Snacks",
+      "Idea": "Arcade snacks, ramen, curry",
+      "Priority": "Medium",
+      "Booking needed": "No",
+      "Link": "TBC",
+      "Notes": "Pair with anime/gaming day"
+    },
+    {
+      "City": "Tokyo",
+      "Area": "Asakusa",
+      "Type": "Lunch/snacks",
+      "Idea": "Nakamise snacks, tempura, soba",
+      "Priority": "Medium",
+      "Booking needed": "Maybe",
+      "Link": "TBC",
+      "Notes": "Old Tokyo day"
+    }
+  ],
+  "accommodation": [
+    {
+      "City": "Osaka",
+      "Dates": "Sat 4 Jul – Tue 7 Jul",
+      "Recommended area": "Namba / Shinsaibashi / Dotonbori",
+      "Why this area": "Food, neon, walkability, easy access to Dotonbori and USJ",
+      "Actual hotel / Airbnb": "APA HOTEL&RESORT OSAKA NAMBA EKIMAE TOWER",
+      "Booking link": "https://www.google.com/maps/search/?api=1&query=APA%20HOTEL%26RESORT%20OSAKA%20NAMBA%20EKIMAE%20TOWER%2C%20Osaka%2C%20Japan",
+      "Notes": "Confirmed for four guests in one connecting fourth room.",
+      "Reservation number": "260608007781",
+      "Check-in date": "2026-07-04",
+      "Check-out date": "2026-07-07",
+      "Room type": "Connecting Fourth Room 28 m² · 2 beds × 2 beds",
+      "Rooms": 1,
+      "Guests": 4,
+      "Nights": 3,
+      "Scheduled arrival time": "22:00",
+      "Total amount JPY": 72920,
+      "Payment method": "Credit card",
+      "Telephone": "+81 6-6635-2811",
+      "Cancellation policy": "No-show/no arrival: 100% of total amount. Cancellation on accommodation date: one-night penalty."
+    },
+    {
+      "City": "Kyoto",
+      "Dates": "Tue 7 Jul – Wed 8 Jul",
+      "Recommended area": "Gion / Kawaramachi / Higashiyama",
+      "Why this area": "Best one-night Kyoto atmosphere",
+      "Actual hotel / Airbnb": "MIMARU Kyoto Kawaramachi Gojo",
+      "Booking link": "https://www.google.com/maps/search/?api=1&query=MIMARU%20Kyoto%20Kawaramachi%20Gojo%2C%20Kyoto%2C%20Japan",
+      "Notes": "Confirmed for Sarah Wilkinson and three other adults. No meal option. City tax may be charged separately; photo ID and a credit card are required at check-in.",
+      "Reservation number": "5065114101",
+      "Check-in date": "2026-07-07",
+      "Check-out date": "2026-07-08",
+      "Check-in window": "15:00–22:00",
+      "Check-out window": "07:00–11:00",
+      "Room type": "Apartment · 5 single beds",
+      "Rooms": 1,
+      "Guests": 4,
+      "Nights": 1,
+      "Scheduled arrival time": "15:00",
+      "Total amount JPY": 41393,
+      "Payment method": "Booking.com automatic card charge · unpaid",
+      "Telephone": "+81 75-744-6750",
+      "Address": "17-1 Hiraicho, Shimogyo-ku, Kyoto, Kyoto, Japan",
+      "Cancellation policy": "Free cancellation until 29 June 2026 at 23:59 JST. From 30 June or for a no-show: full reservation price (AUD 403.19)."
+    },
+    {
+      "City": "Tokyo",
+      "Dates": "Wed 8 Jul – Sun 12 Jul",
+      "Recommended area": "Shibuya preferred; Shinjuku second; Akasaka/Roppongi fallback",
+      "Why this area": "Best for teenagers, food, transport, Harajuku access and Tokyo energy",
+      "Actual hotel / Airbnb": "Cozy APT Stay in Center Tokyo -SHIBUYA",
+      "Booking link": "https://www.google.com/maps/search/?api=1&query=Cozy%20APT%20Stay%20in%20Center%20Tokyo%20SHIBUYA%2C%20Dogenzaka%2C%20Tokyo%2C%20Japan",
+      "Notes": "Confirmed for Sarah Wilkinson and three other adults. No meal option. ¥163,900 paid and ¥140,860 remaining.",
+      "Reservation number": "6382485346",
+      "Check-in date": "2026-07-08",
+      "Check-out date": "2026-07-12",
+      "Check-in window": "16:00–23:00",
+      "Check-out window": "06:00–11:00",
+      "Room type": "Apartment with balcony",
+      "Rooms": 1,
+      "Guests": 4,
+      "Nights": 4,
+      "Scheduled arrival time": "16:00",
+      "Total amount JPY": 304760,
+      "Payment method": "Booking.com · ¥163,900 paid · ¥140,860 remaining",
+      "Telephone": "+81 80-7657-3699",
+      "Address": "2-19 Dogenzaka, Shibuya-ku, Tokyo, Japan",
+      "Cancellation policy": "Non-refundable and dates cannot be changed. Cancellation through 8 July 2026 at 23:59: ¥158,400; from 9 July or no-show: ¥316,800."
+    }
+  ],
+  "phrases": [
+    {
+      "category": "Essentials",
+      "english": "Hello",
+      "japanese": "こんにちは",
+      "romaji": "Konnichiwa",
+      "note": "General daytime greeting"
+    },
+    {
+      "category": "Essentials",
+      "english": "Thank you",
+      "japanese": "ありがとうございます",
+      "romaji": "Arigatou gozaimasu",
+      "note": "Use often"
+    },
+    {
+      "category": "Essentials",
+      "english": "Excuse me / sorry",
+      "japanese": "すみません",
+      "romaji": "Sumimasen",
+      "note": "Very useful in crowds/restaurants"
+    },
+    {
+      "category": "Food",
+      "english": "Can we have the menu?",
+      "japanese": "メニューをお願いします",
+      "romaji": "Menyū o onegaishimasu",
+      "note": ""
+    },
+    {
+      "category": "Food",
+      "english": "A table for four, please",
+      "japanese": "4人です",
+      "romaji": "Yonin desu",
+      "note": "Literally: We are four people"
+    },
+    {
+      "category": "Food",
+      "english": "Do you have an English menu?",
+      "japanese": "英語のメニューはありますか",
+      "romaji": "Eigo no menyū wa arimasu ka?",
+      "note": ""
+    },
+    {
+      "category": "Food",
+      "english": "What do you recommend?",
+      "japanese": "おすすめは何ですか",
+      "romaji": "Osusume wa nan desu ka?",
+      "note": ""
+    },
+    {
+      "category": "Food",
+      "english": "We'll have this, please",
+      "japanese": "これをお願いします",
+      "romaji": "Kore o onegaishimasu",
+      "note": "Point to the menu item as you say it"
+    },
+    {
+      "category": "Food",
+      "english": "Water, please",
+      "japanese": "お水をお願いします",
+      "romaji": "Omizu o onegaishimasu",
+      "note": ""
+    },
+    {
+      "category": "Food",
+      "english": "Another one, please",
+      "japanese": "もう一つお願いします",
+      "romaji": "Mō hitotsu onegaishimasu",
+      "note": "Useful for another dish, drink or item"
+    },
+    {
+      "category": "Food",
+      "english": "The bill, please",
+      "japanese": "お会計をお願いします",
+      "romaji": "Okaikei o onegaishimasu",
+      "note": "In many restaurants you take the bill to the register"
+    },
+    {
+      "category": "Food",
+      "english": "Can I pay by card?",
+      "japanese": "カードは使えますか",
+      "romaji": "Kādo wa tsukaemasu ka?",
+      "note": ""
+    },
+    {
+      "category": "Food",
+      "english": "It was delicious",
+      "japanese": "おいしかったです",
+      "romaji": "Oishikatta desu",
+      "note": "A warm compliment after the meal"
+    },
+    {
+      "category": "Food",
+      "english": "Thanks for the meal",
+      "japanese": "ごちそうさまでした",
+      "romaji": "Gochisōsama deshita",
+      "note": "Say this when finishing or leaving"
+    },
+    {
+      "category": "Restaurant etiquette",
+      "english": "Welcome",
+      "japanese": "いらっしゃいませ",
+      "romaji": "Irasshaimase",
+      "note": "Staff say this when customers enter. You do not need to reply; a smile or nod is fine."
+    },
+    {
+      "category": "Restaurant etiquette",
+      "english": "Thank you very much",
+      "japanese": "ありがとうございました",
+      "romaji": "Arigatō gozaimashita",
+      "note": "Staff often say this as customers leave. It thanks you for your visit."
+    },
+    {
+      "category": "Restaurant etiquette",
+      "english": "Please come again",
+      "japanese": "またお越しくださいませ",
+      "romaji": "Mata okoshi kudasaimase",
+      "note": "A polite farewell that means they hope you will visit again."
+    },
+    {
+      "category": "Transport",
+      "english": "Where is the station?",
+      "japanese": "駅はどこですか",
+      "romaji": "Eki wa doko desu ka?",
+      "note": ""
+    },
+    {
+      "category": "Shopping",
+      "english": "How much is this?",
+      "japanese": "これはいくらですか",
+      "romaji": "Kore wa ikura desu ka?",
+      "note": ""
+    },
+    {
+      "category": "Emergency",
+      "english": "Please help",
+      "japanese": "助けてください",
+      "romaji": "Tasukete kudasai",
+      "note": ""
+    }
+  ],
+  "signs_symbols": [
+    {
+      "symbol": "駅",
+      "romaji": "Eki",
+      "meaning": "Train station",
+      "where_seen": "Stations, maps"
+    },
+    {
+      "symbol": "入口",
+      "romaji": "Iriguchi",
+      "meaning": "Entrance",
+      "where_seen": "Shops, stations, attractions"
+    },
+    {
+      "symbol": "出口",
+      "romaji": "Deguchi",
+      "meaning": "Exit",
+      "where_seen": "Stations, buildings"
+    },
+    {
+      "symbol": "北 / 南 / 東 / 西",
+      "romaji": "Kita / Minami / Higashi / Nishi",
+      "meaning": "North / South / East / West",
+      "where_seen": "Station exits"
+    },
+    {
+      "symbol": "精算機",
+      "romaji": "Seisanki",
+      "meaning": "Fare adjustment machine",
+      "where_seen": "Train stations"
+    },
+    {
+      "symbol": "現金のみ",
+      "romaji": "Genkin nomi",
+      "meaning": "Cash only",
+      "where_seen": "Small restaurants/shops"
+    },
+    {
+      "symbol": "禁煙",
+      "romaji": "Kinen",
+      "meaning": "No smoking",
+      "where_seen": "Public areas"
+    },
+    {
+      "symbol": "お手洗い",
+      "romaji": "Otearai",
+      "meaning": "Toilet/restroom",
+      "where_seen": "Restaurants, stations"
+    }
+  ],
+  "place_facts": [
+    {
+      "place": "Dotonbori",
+      "city": "Osaka",
+      "fact": "Osaka’s neon-heavy food district, famous for takoyaki, giant signs, and the Glico running man.",
+      "event_title": "Dotonbori, Shinsaibashi, Amerikamura, Orange Street"
+    },
+    {
+      "place": "Kuromon Ichiba Market",
+      "city": "Osaka",
+      "fact": "A covered food market known for seafood, grilled snacks, fruit and grazing-style eating.",
+      "event_title": "Kuromon Ichiba Market"
+    },
+    {
+      "place": "Osaka Castle",
+      "city": "Osaka",
+      "fact": "Toyotomi Hideyoshi began the original castle in 1583. Today’s main tower is a museum reconstruction surrounded by large stone walls and moats.",
+      "event_title": "Universal Studios Japan or Osaka Castle"
+    },
+    {
+      "place": "Shinsekai",
+      "city": "Osaka",
+      "fact": "This retro entertainment district grew in the early 1900s. Tsutenkaku tower is its landmark, and kushikatsu is the classic local snack.",
+      "event_title": "Shinsekai; dinner in Ura Namba or Hozenji Yokocho"
+    },
+    {
+      "place": "Fushimi Inari",
+      "city": "Kyoto",
+      "fact": "Known for thousands of vermilion torii gates climbing the mountain behind the shrine. Fox statues appear throughout because foxes are regarded as messengers of Inari.",
+      "event_title": "Train Osaka to Kyoto; Fushimi Inari"
+    },
+    {
+      "place": "Gion",
+      "city": "Kyoto",
+      "fact": "Kyoto’s historic entertainment district with preserved streets and traditional atmosphere. Its geiko and maiko are working artists, so give them space and avoid blocking private lanes.",
+      "event_title": "Gion, Pontocho, Kamo River dinner"
+    },
+    {
+      "place": "Nishiki Market",
+      "city": "Kyoto",
+      "fact": "The narrow covered shopping street is often called Kyoto’s Kitchen. Many stalls specialise in one food or ingredient passed down through generations.",
+      "event_title": "Nishiki Market; Kiyomizu-dera; Ninenzaka/Sannenzaka"
+    },
+    {
+      "place": "Kiyomizu-dera",
+      "city": "Kyoto",
+      "fact": "The temple’s famous wooden stage projects from the hillside without nails. Its name means Pure Water Temple, after the Otowa waterfall below.",
+      "event_title": "Nishiki Market; Kiyomizu-dera; Ninenzaka/Sannenzaka"
+    },
+    {
+      "place": "Ninenzaka and Sannenzaka",
+      "city": "Kyoto",
+      "fact": "These preserved sloping streets lead toward Kiyomizu-dera and are lined with traditional buildings, small shops and teahouses.",
+      "event_title": "Nishiki Market; Kiyomizu-dera; Ninenzaka/Sannenzaka"
+    },
+    {
+      "place": "Pontocho and the Kamo River",
+      "city": "Kyoto",
+      "fact": "Pontocho is a narrow dining alley beside the Kamo River. In summer, some restaurants build raised riverside terraces called kawayuka.",
+      "event_title": "Gion, Pontocho, Kamo River dinner"
+    },
+    {
+      "place": "Arashiyama",
+      "city": "Kyoto",
+      "fact": "The district is known for its bamboo grove, temple gardens and Togetsukyo Bridge. Early morning is usually the calmest time to explore.",
+      "event_title": "Optional Arashiyama or slow Kyoto morning"
+    },
+    {
+      "place": "Shibuya Crossing",
+      "city": "Tokyo",
+      "fact": "One of Tokyo’s best-known intersections and a strong first-night Tokyo moment. The scramble phase lets pedestrians cross in every direction at once.",
+      "event_title": "Shibuya Crossing, Hachiko, Shibuya Sky, dinner"
+    },
+    {
+      "place": "Harajuku",
+      "city": "Tokyo",
+      "fact": "Youth culture, fashion, Takeshita Street snacks, and easy access to Meiji Shrine.",
+      "event_title": "Meiji Shrine; Harajuku; Takeshita Street"
+    },
+    {
+      "place": "Hachiko",
+      "city": "Tokyo",
+      "fact": "The statue remembers an Akita dog famous for continuing to wait at Shibuya Station for his owner. It is now one of Tokyo’s best-known meeting points.",
+      "event_title": "Shibuya Crossing, Hachiko, Shibuya Sky, dinner"
+    },
+    {
+      "place": "Shibuya Sky",
+      "city": "Tokyo",
+      "fact": "This open-air observation deck sits above Shibuya Scramble Square and looks directly over the crossing and Tokyo skyline.",
+      "event_title": "Shibuya Crossing, Hachiko, Shibuya Sky, dinner"
+    },
+    {
+      "place": "Meiji Shrine",
+      "city": "Tokyo",
+      "fact": "Meiji Jingu is dedicated to Emperor Meiji and Empress Shoken. Its forest was planted with donated trees from across Japan.",
+      "event_title": "Meiji Shrine; Harajuku; Takeshita Street"
+    },
+    {
+      "place": "Takeshita Street",
+      "city": "Tokyo",
+      "fact": "The compact pedestrian street is associated with youth fashion, colourful sweets and small independent shops; it is busiest after late morning.",
+      "event_title": "Meiji Shrine; Harajuku; Takeshita Street"
+    },
+    {
+      "place": "Akihabara",
+      "city": "Tokyo",
+      "fact": "Tokyo’s electronics, anime, gaming and arcade district. Look above street level too: many specialist shops and cafés occupy upper floors.",
+      "event_title": "Akihabara gaming/anime/electronics"
+    },
+    {
+      "place": "Asakusa",
+      "city": "Tokyo",
+      "fact": "Home to Senso-ji, Tokyo’s oldest temple, and Nakamise shopping street.",
+      "event_title": "Asakusa, Senso-ji, Nakamise"
+    },
+    {
+      "place": "Senso-ji and Nakamise",
+      "city": "Tokyo",
+      "fact": "Senso-ji is traditionally dated to 628. Nakamise, the shopping approach between Kaminarimon gate and the temple, sells snacks and souvenirs.",
+      "event_title": "Asakusa, Senso-ji, Nakamise"
+    },
+    {
+      "place": "Tokyo DisneySea",
+      "city": "Tokyo",
+      "fact": "Opened in 2001, DisneySea is a sea-themed park unique to Tokyo Disney Resort, organised around themed ports rather than traditional lands.",
+      "event_title": "Tokyo DisneySea and/or Disneyland"
+    },
+    {
+      "place": "teamLab",
+      "city": "Tokyo",
+      "fact": "teamLab creates immersive digital artworks that respond to movement and change over time. The experience can involve dark rooms, mirrors and water.",
+      "event_title": "teamLab; final dinner in Ebisu or Nakameguro"
+    }
+  ]
+}

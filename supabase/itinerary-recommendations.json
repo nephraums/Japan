@@ -1,0 +1,164 @@
+[
+  {
+    "title": "JQ13 Sydney to Osaka (Kansai)",
+    "travel_mode": "Flight",
+    "travel_details": "Jetstar JQ13 from Sydney T1 International to Kansai International Airport. Allow at least three hours at Sydney Airport before the 11:00 departure.",
+    "planning_note": null
+  },
+  {
+    "title": "Arrive Kansai International Airport",
+    "travel_mode": "Walk · airport formalities",
+    "travel_details": "Follow International Arrivals through immigration, baggage claim and customs, then regroup in the public arrivals hall before buying or collecting transport tickets.",
+    "planning_note": null
+  },
+  {
+    "title": "Transfer to hotel; late Dotonbori food if energy allows",
+    "travel_mode": "Nankai train · then walk or taxi",
+    "travel_details": "Take the Nankai Rapi:t or Airport Express from Kansai Airport to Nankai Namba. APA Hotel & Resort Osaka Namba Ekimae Tower is near JR Namba/OCAT, around a 10–15 minute walk from Nankai Namba; use a short taxi with luggage after the late arrival.",
+    "planning_note": "Landing at 19:50 makes Dotonbori optional. Expect hotel arrival around 21:30–22:30 after immigration and the airport train."
+  },
+  {
+    "title": "Kuromon Ichiba Market",
+    "travel_mode": "Walk",
+    "travel_details": "From Namba, walk about 10–15 minutes to the market’s west or south entrance. Start near opening time and continue on foot toward Dotonbori afterwards.",
+    "planning_note": null
+  },
+  {
+    "title": "Dotonbori, Shinsaibashi, Amerikamura, Orange Street",
+    "travel_mode": "Walk",
+    "travel_details": "Make this a one-way walking loop: Kuromon or Namba → Dotonbori → Shinsaibashi-suji → Amerikamura → Orange Street. Use Osaka Metro only if heat or fatigue catches up.",
+    "planning_note": null
+  },
+  {
+    "title": "Shinsekai; dinner in Ura Namba or Hozenji Yokocho",
+    "travel_mode": "Osaka Metro · walk",
+    "travel_details": "Take the Midosuji Line from Namba to Dobutsuen-mae for Shinsekai. Return toward Namba by metro for Ura Namba or Hozenji Yokocho; both dinner areas are easiest on foot from Namba.",
+    "planning_note": "Shinsekai plus a second dinner district may feel rushed. Choose Shinsekai dinner or return to Namba based on energy."
+  },
+  {
+    "title": "Universal Studios Japan or Osaka Castle",
+    "travel_mode": "JR for USJ · Osaka Metro for castle",
+    "travel_details": "USJ: travel via JR Osaka Loop Line and transfer at Nishikujo to the JR Yumesaki Line for Universal City. Osaka Castle: use Tanimachi 4-chome or Morinomiya station and walk through the park.",
+    "planning_note": "Choose USJ or Osaka Castle before booking. They are alternative plans, not a workable combined morning."
+  },
+  {
+    "title": "USJ full day or Umeda/Pokémon Center/shopping",
+    "travel_mode": "JR",
+    "travel_details": "USJ: remain in the park for the full day. Umeda alternative: take the Midosuji Line from Namba to Umeda; Pokémon Center Osaka is inside Daimaru at Osaka Station City.",
+    "planning_note": "This depends on the morning decision. If choosing USJ, treat it as the entire day and pre-book dated tickets."
+  },
+  {
+    "title": "Easy Namba dinner or teamLab Botanical Garden Osaka",
+    "travel_mode": "Walk · or Osaka Metro",
+    "travel_details": "Namba dinner is walkable from the hotel area. For teamLab Botanical Garden, take the Midosuji Line to Nagai Station, then walk roughly 10 minutes into Nagai Botanical Garden; return by the same route.",
+    "planning_note": "teamLab Botanical Garden is an evening commitment after a long USJ day. Keep Namba dinner as the low-energy fallback."
+  },
+  {
+    "title": "Train Osaka to Kyoto; Fushimi Inari",
+    "travel_mode": "JR trains · Kyoto subway",
+    "travel_details": "From APA Osaka Namba Ekimae Tower, travel from JR Namba or Osaka-Namba to Osaka/Umeda, then take a JR Special Rapid service to Kyoto Station. Continue one stop on the Karasuma subway line to Gojo and walk to MIMARU Kyoto Kawaramachi Gojo. After leaving luggage, use the Keihan line from Kiyomizu-Gojo to Fushimi-inari.",
+    "planning_note": "MIMARU check-in begins at 15:00. Confirm whether the hotel can store luggage earlier; otherwise use Kyoto Station lockers."
+  },
+  {
+    "title": "Nishiki Market; Kiyomizu-dera; Ninenzaka/Sannenzaka",
+    "travel_mode": "Keihan train · taxi/bus · walk",
+    "travel_details": "From Fushimi Inari, use the Keihan Line from Fushimi-inari to Gion-shijo. Walk to Nishiki Market, then use a taxi or city bus toward Kiyomizu-michi and finish uphill on foot. Walk downhill through Sannenzaka and Ninenzaka.",
+    "planning_note": "This is the densest block of the trip. Nishiki stalls begin closing late afternoon, while Kiyomizu involves hills and crowds; keep lunch brief and consider a taxi."
+  },
+  {
+    "title": "Gion, Pontocho, Kamo River dinner",
+    "travel_mode": "Walk",
+    "travel_details": "Continue downhill from Higashiyama into Gion, cross the Kamo River near Shijo, then explore Pontocho on foot. Take a taxi back to the hotel if everyone is tired.",
+    "planning_note": null
+  },
+  {
+    "title": "Optional Arashiyama or slow Kyoto morning",
+    "travel_mode": "Kyoto subway + JR · or walk locally",
+    "travel_details": "For Arashiyama, travel from MIMARU to Kyoto Station via Gojo subway station, then take the JR Sagano Line to Saga-Arashiyama and walk to the bamboo grove. Otherwise keep the morning around Gojo, the Kamo River and Kawaramachi.",
+    "planning_note": "Arashiyama adds roughly an hour of return travel before the Tokyo transfer. Only do it with an early start and confirmed luggage storage."
+  },
+  {
+    "title": "Shinkansen to Tokyo; check in",
+    "travel_mode": "Tokaido Shinkansen · JR Yamanote Line",
+    "travel_details": "Travel from MIMARU to Kyoto Station, then take a reserved Nozomi to Shinagawa. Change to the JR Yamanote Line for Shibuya. The Dogenzaka apartment is uphill from Shibuya Station; with luggage, use a short taxi for the final leg. Check-in is 16:00–23:00.",
+    "planning_note": "Book the Shinkansen and confirm the apartment's key or access instructions before arrival. Check oversized-luggage rules if any bag exceeds the limit."
+  },
+  {
+    "title": "Shibuya Crossing, Hachiko, Shibuya Sky, dinner",
+    "travel_mode": "JR/metro · then walk",
+    "travel_details": "Travel to Shibuya Station, use the Hachiko exit for the statue and crossing, then walk through Shibuya Scramble Square to Shibuya Sky. Keep the neighbourhood portion entirely on foot.",
+    "planning_note": "Shibuya Sky requires a timed ticket. Choose this evening or 9 July, not both, and book around sunset only if the transfer day has enough buffer."
+  },
+  {
+    "title": "Meiji Shrine; Harajuku; Takeshita Street",
+    "travel_mode": "JR Yamanote Line · walk",
+    "travel_details": "Use Harajuku Station for Meiji Shrine’s main approach. After the shrine, exit toward Harajuku and walk Takeshita Street; Meiji-jingumae metro station is useful for the next leg.",
+    "planning_note": null
+  },
+  {
+    "title": "Teen independent block: Tokyu Plaza to Hachiko via Cat Street/Miyashita/Shibuya Parco",
+    "travel_mode": "Walk",
+    "travel_details": "Use a simple southbound walking route: Tokyu Plaza Harajuku → Cat Street → Miyashita Park → Shibuya Parco → Hachiko. Agree on fixed check-in times and a meeting point before splitting up.",
+    "planning_note": "Add phone data, live location sharing and a clear fallback meeting point before treating this as independent time."
+  },
+  {
+    "title": "Shibuya Sky or dinner in Ebisu/Nakameguro",
+    "travel_mode": "JR Yamanote Line · Tokyo Metro",
+    "travel_details": "Shibuya Sky is beside Shibuya Station. For Ebisu, take the JR Yamanote Line one stop; for Nakameguro, use the Tokyu Toyoko Line or travel via Ebisu and the Hibiya Line.",
+    "planning_note": "This duplicates the previous night’s Shibuya Sky option. Keep it as the weather backup and choose one dinner neighbourhood."
+  },
+  {
+    "title": "Travel to Maihama / Tokyo Disney Resort",
+    "travel_mode": "JR trains",
+    "travel_details": "Travel to Tokyo Station, follow the long internal walk to the Keiyo Line, then take a train to Maihama. From Shibuya allow roughly 50–65 minutes door to door, plus queue time before park opening.",
+    "planning_note": "Park tickets and opening strategy are still unresolved. Aim to arrive well before the published opening time."
+  },
+  {
+    "title": "Tokyo DisneySea and/or Disneyland",
+    "travel_mode": "Walk · Disney Resort Line",
+    "travel_details": "Disneyland is walkable from Maihama. For DisneySea, take the Disney Resort Line from Resort Gateway Station to Tokyo DisneySea Station.",
+    "planning_note": "Choose one park. Trying to cover both in a single day will sacrifice major attractions and requires ticket products that may not be available."
+  },
+  {
+    "title": "Return to Tokyo hotel",
+    "travel_mode": "Disney Resort Line · JR trains",
+    "travel_details": "Return to Maihama, take the JR Keiyo Line to Tokyo Station, then connect to the hotel. Expect crowded trains after closing and agree on a family meeting point before leaving the park.",
+    "planning_note": null
+  },
+  {
+    "title": "Asakusa, Senso-ji, Nakamise",
+    "travel_mode": "Tokyo Metro Ginza Line · walk",
+    "travel_details": "Use the Ginza Line to Asakusa Station, then walk to Kaminarimon, Nakamise and Senso-ji. Continue beyond the main hall or along the Sumida River when the central approach becomes crowded.",
+    "planning_note": null
+  },
+  {
+    "title": "Akihabara gaming/anime/electronics",
+    "travel_mode": "Tokyo Metro or Tsukuba Express",
+    "travel_details": "From Asakusa, take the Ginza Line to Suehirocho for northern Akihabara, or the Tsukuba Express to Akihabara Station. Explore on foot and set a meeting point because shops are spread across multiple buildings and floors.",
+    "planning_note": null
+  },
+  {
+    "title": "teamLab; final dinner in Ebisu or Nakameguro",
+    "travel_mode": "Tokyo Metro Hibiya Line",
+    "travel_details": "For teamLab Borderless at Azabudai Hills, take the Hibiya Line to Kamiyacho. Afterward the same line runs directly toward Ebisu and Nakameguro for dinner.",
+    "planning_note": "A timed teamLab ticket is required. Confirm Borderless rather than Planets, then book dinner with enough travel buffer."
+  },
+  {
+    "title": "Final shopping / breakfast",
+    "travel_mode": "Walk · local train",
+    "travel_details": "Stay close to the hotel or a direct station route. Avoid crossing the city with luggage and choose shops that open early enough for the departure schedule.",
+    "planning_note": "Leave purchases packable and keep passports, flight documents and airport clothes out of checked luggage."
+  },
+  {
+    "title": "Lunch; collect bags; transfer to Narita",
+    "travel_mode": "Narita Express from Shibuya",
+    "travel_details": "Collect bags from the Dogenzaka apartment, then take a reserved Narita Express from Shibuya Station to Narita Airport Terminal 2·3. A taxi from the apartment to the station is sensible with luggage. Aim to reach Terminal 3 by about 17:00 for the 20:05 flight.",
+    "planning_note": "Check the July Narita Express timetable when reservations open and plan to leave Shibuya around 15:30–16:00. Confirm luggage storage after the 11:00 apartment checkout."
+  },
+  {
+    "title": "JQ26 + JQ953 Tokyo to Sydney via Cairns",
+    "travel_mode": "Flight · domestic connection",
+    "travel_details": "Jetstar JQ26 departs Narita Terminal 3 for Cairns. After arriving, follow transfer instructions for JQ953 to Sydney and allow for immigration, customs and the domestic-terminal connection.",
+    "planning_note": "The Cairns connection is 2 hr 15 min. Keep arrival documents and the domestic boarding details accessible."
+  }
+]
