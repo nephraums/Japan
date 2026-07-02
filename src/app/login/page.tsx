@@ -8,6 +8,7 @@ const previewProfiles: FamilyProfile[] = [
   { id: "preview-sarah", display_name: "Sarah", role: "parent", avatar_emoji: "🌸" },
   { id: "preview-harrison", display_name: "Harrison", role: "teen", avatar_emoji: "🎮" },
   { id: "preview-evelyn", display_name: "Evelyn", role: "teen", avatar_emoji: "🍡" },
+  { id: "preview-guest", display_name: "Guest", role: "guest", avatar_emoji: "🧳" },
 ];
 
 export default async function LoginPage({

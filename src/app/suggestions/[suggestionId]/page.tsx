@@ -19,8 +19,9 @@ export default async function SuggestionPage({
   const suggestion = data.suggestions.find((item) => item.id === suggestionId);
   if (!suggestion) notFound();
   const target = data.events.find((event) => event.id === suggestion.target_event_id);
-  const canEdit = suggestion.status === "open" && data.profile?.id === suggestion.suggested_by;
-  const canDecide = ["open", "parked"].includes(suggestion.status) && data.profile?.role === "parent";
+  const readOnly = data.profile?.role === "guest";
+  const canEdit = !readOnly && suggestion.status === "open" && data.profile?.id === suggestion.suggested_by;
+  const canDecide = !readOnly && ["open", "parked"].includes(suggestion.status) && data.profile?.role === "parent";
   const defaultDate = suggestion.date ?? target?.date ?? data.trip.start_date;
   const defaultCity = suggestion.city ?? target?.city ?? "";
   const preferredSlot = suggestion.preferred_time?.toLowerCase();
@@ -154,10 +155,10 @@ export default async function SuggestionPage({
 
           <div className="mt-6 border-t border-[#ded3c3] pt-5">
             <p className="mb-3 text-sm font-bold text-[#514b45]">What do you think?</p>
-            <div className="flex gap-2">
+            {readOnly ? <p className="rounded-xl bg-[#efe5d6] p-3 text-sm font-semibold text-[#655e56]">Guest view is read-only. Current votes: Yes {suggestion.votes_for} · No {suggestion.votes_against}.</p> : <div className="flex gap-2">
               <form action={castVote}><input type="hidden" name="suggestion_id" value={suggestion.id} /><input type="hidden" name="vote" value="for" /><input type="hidden" name="return_to" value={`/suggestions/${suggestion.id}`} /><button className="inline-flex min-h-12 items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 px-5 text-sm font-bold text-emerald-800"><ThumbsUp size={17} />Yes · {suggestion.votes_for}</button></form>
               <form action={castVote}><input type="hidden" name="suggestion_id" value={suggestion.id} /><input type="hidden" name="vote" value="against" /><input type="hidden" name="return_to" value={`/suggestions/${suggestion.id}`} /><button className="inline-flex min-h-12 items-center gap-2 rounded-xl border border-rose-200 bg-rose-50 px-5 text-sm font-bold text-rose-800"><ThumbsDown size={17} />No · {suggestion.votes_against}</button></form>
-            </div>
+            </div>}
           </div>
         </article>
 

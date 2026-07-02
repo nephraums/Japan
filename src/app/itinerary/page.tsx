@@ -50,6 +50,7 @@ export default async function ItineraryPage({
             facts={data.facts.filter((fact) => fact.itinerary_event_id && events.some((event) => event.id === fact.itinerary_event_id))}
             profile={data.profile}
             demo={data.demo}
+            readOnly={data.profile?.role === "guest"}
           />
         </section>
       </div>

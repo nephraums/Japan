@@ -39,6 +39,7 @@ export function AppShell({
             ) : profile ? (
               <span className="hidden items-center gap-2 text-sm font-semibold sm:flex">
                 <span aria-hidden="true">{profile.avatar_emoji}</span>{profile.display_name}
+                {profile.role === "guest" && <span className="rounded-full bg-[#efe5d6] px-2 py-0.5 text-[10px] uppercase tracking-wider text-[#716a62]">Read only</span>}
               </span>
             ) : null}
             <PwaInstallButton />
@@ -51,6 +52,12 @@ export function AppShell({
       {demo && (
         <div className="border-b border-[#d8c49f] bg-[#f3e5c7] px-4 py-2 text-center text-xs font-semibold text-[#65583f]">
           Supabase is not connected yet. You can explore the complete interface; drag changes are saved only on this device.
+        </div>
+      )}
+
+      {!demo && profile?.role === "guest" && (
+        <div className="border-b border-[#d8c49f] bg-[#f3e5c7] px-4 py-2 text-center text-xs font-semibold text-[#65583f]">
+          Guest view is read-only. You can browse the plan, maps, ideas and guide, but only the family can make changes.
         </div>
       )}
 

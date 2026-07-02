@@ -1,4 +1,4 @@
-export type FamilyUserName = "Nigel" | "Sarah" | "Harrison" | "Evelyn";
+export type FamilyUserName = "Nigel" | "Sarah" | "Harrison" | "Evelyn" | "Guest";
 
 export type ItineraryStatus =
   | "draft"
@@ -58,7 +58,7 @@ export interface Trip {
 export interface FamilyProfile {
   id: string;
   display_name: FamilyUserName;
-  role: string;
+  role: "parent" | "teen" | "member" | "guest" | string;
   avatar_emoji: string;
 }
 

@@ -24,13 +24,14 @@ export default async function EventPage({
   const facts = data.facts.filter((fact) => fact.itinerary_event_id === event.id);
   const mapUrl = itineraryMapUrl(event);
   const message = (await searchParams).message;
+  const readOnly = data.profile?.role === "guest";
 
   return (
     <AppShell profile={data.profile} demo={data.demo}>
       <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-9">
         <Link href={`/itinerary?date=${event.date}`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[#ded3c3] bg-white/70 px-4 text-sm font-bold text-[#514b45]"><ArrowLeft size={17} /> Back to {event.city}</Link>
         <header className="mt-5">
-          <p className="text-xs font-bold uppercase tracking-[.18em] text-[#9f2a22]">Edit and discuss</p>
+          <p className="text-xs font-bold uppercase tracking-[.18em] text-[#9f2a22]">{readOnly ? "Trip details" : "Edit and discuss"}</p>
           <h1 className="font-japanese mt-2 text-3xl font-bold leading-tight">{event.title}</h1>
           <p className="mt-2 flex items-center gap-2 text-sm text-[#716a62]"><MapPin size={15} />{event.city} · {event.date}</p>
           {mapUrl && <a href={mapUrl} target="_blank" rel="noreferrer" className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl bg-[#c83b2f] px-4 text-xs font-bold text-white"><MapPin size={15} /> Open Google Maps <ExternalLink size={13} /></a>}
@@ -40,6 +41,14 @@ export default async function EventPage({
 
         {event.flight_details && <FlightDetailsPanel details={event.flight_details} />}
 
+        {readOnly ? (
+          <section className="mt-6 space-y-3 rounded-[1.6rem] border border-[#ded3c3] bg-white/80 p-5 shadow-[0_12px_35px_rgba(66,51,38,.07)]">
+            <p className="text-sm font-semibold text-[#655e56]">Guest view is read-only. You can view the plan, route notes, maps and comments.</p>
+            {event.description && <p className="text-sm leading-relaxed text-[#514b45]">{event.description}</p>}
+            {event.travel_mode && <p className="text-sm"><strong>Recommended travel:</strong> {event.travel_mode}</p>}
+            {event.travel_details && <p className="text-sm leading-relaxed text-[#655e56]">{event.travel_details}</p>}
+          </section>
+        ) : (
         <form action={updateEvent} className="mt-6 space-y-4 rounded-[1.6rem] border border-[#ded3c3] bg-white/80 p-5 shadow-[0_12px_35px_rgba(66,51,38,.07)]">
           <input type="hidden" name="event_id" value={event.id} />
           <label className="block text-sm font-bold text-[#514b45]">Activity title
@@ -73,6 +82,7 @@ export default async function EventPage({
           </label>
           <button className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-[#26231f] px-5 text-sm font-bold text-white"><Save size={17} />Save changes</button>
         </form>
+        )}
 
         {facts.length > 0 && <section className="pt-8" aria-labelledby="facts-heading">
           <div className="flex items-center gap-2"><BookOpenText size={20} className="text-[#9f2a22]" /><h2 id="facts-heading" className="font-japanese text-2xl font-bold">Place facts</h2></div>
@@ -92,14 +102,14 @@ export default async function EventPage({
               </article>
             )) : <p className="rounded-2xl border border-dashed border-[#c7b6a1] p-4 text-sm text-[#716a62]">No comments yet. Start the family conversation.</p>}
           </div>
-          <form action={addEventComment} className="mt-4 rounded-2xl border border-[#ded3c3] bg-white/75 p-4">
+          {!readOnly && <form action={addEventComment} className="mt-4 rounded-2xl border border-[#ded3c3] bg-white/75 p-4">
             <input type="hidden" name="event_id" value={event.id} />
             <input type="hidden" name="trip_id" value={event.trip_id} />
             <label className="block text-sm font-bold text-[#514b45]">Add a comment
               <textarea name="body" rows={3} maxLength={1000} required className="mt-2 w-full rounded-xl border border-[#ded3c3] bg-white p-3 font-normal" placeholder="What do you think?" />
             </label>
             <button className="mt-3 inline-flex min-h-12 items-center gap-2 rounded-xl bg-[#c83b2f] px-5 text-sm font-bold text-white"><Send size={17} />Post comment</button>
-          </form>
+          </form>}
         </section>
       </div>
     </AppShell>

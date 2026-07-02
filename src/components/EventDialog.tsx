@@ -16,11 +16,13 @@ export function EventDialog({
   onClose,
   onUpdated,
   onCommentAdded,
+  readOnly = false,
 }: {
   event: ItineraryEvent;
   comments: EventComment[];
   profile: FamilyProfile | null;
   demo: boolean;
+  readOnly?: boolean;
   onClose: () => void;
   onUpdated: (event: ItineraryEvent) => void;
   onCommentAdded: (comment: EventComment) => void;
@@ -42,6 +44,7 @@ export function EventDialog({
   async function saveEvent(saveEvent: React.FormEvent) {
     saveEvent.preventDefault();
     setMessage("");
+    if (readOnly) return setMessage("Guest view is read-only.");
     if (!title.trim()) return setMessage("Add a title before saving.");
     if (endTime <= startTime) return setMessage("The end time must be after the start time.");
     setSaving(true);
@@ -85,6 +88,7 @@ export function EventDialog({
 
   async function addComment(commentEvent: React.FormEvent) {
     commentEvent.preventDefault();
+    if (readOnly) return setMessage("Guest view is read-only.");
     const body = commentBody.trim();
     if (!body) return;
     setPosting(true);
@@ -148,7 +152,9 @@ export function EventDialog({
 
         {event.flight_details && <FlightDetailsPanel details={event.flight_details} />}
 
-        <form onSubmit={saveEvent} className="mt-6 space-y-4 rounded-2xl border border-[#ded3c3] bg-white/75 p-4 sm:p-5">
+        {readOnly && <p className="mt-5 rounded-xl bg-[#efe5d6] p-3 text-sm font-semibold text-[#655e56]">Guest view is read-only, so itinerary edits and comments are hidden.</p>}
+
+        {!readOnly && <form onSubmit={saveEvent} className="mt-6 space-y-4 rounded-2xl border border-[#ded3c3] bg-white/75 p-4 sm:p-5">
           <label className="block text-sm font-bold text-[#514b45]">Activity title
             <input value={title} onChange={(input) => setTitle(input.target.value)} className="mt-2 min-h-12 w-full rounded-xl border border-[#ded3c3] bg-white px-3 font-normal" required />
           </label>
@@ -180,7 +186,7 @@ export function EventDialog({
           </label>
           {previewMapUrl && <a href={previewMapUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-[#ded3c3] bg-white px-3 text-xs font-bold text-[#514b45]"><MapPin size={15} /> Open Google Maps <ExternalLink size={13} /></a>}
           <button disabled={saving} className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-[#26231f] px-5 text-sm font-bold text-white disabled:opacity-60"><Save size={17} />{saving ? "Saving…" : "Save changes"}</button>
-        </form>
+        </form>}
 
         <section className="mt-6" aria-labelledby="comments-heading">
           <div className="flex items-center gap-2"><MessageCircle size={19} className="text-[#9f2a22]" /><h3 id="comments-heading" className="font-japanese text-xl font-bold">Family comments</h3><span className="rounded-full bg-[#efe5d6] px-2 py-0.5 text-xs font-bold">{comments.length}</span></div>
@@ -192,12 +198,12 @@ export function EventDialog({
               </article>
             )) : <p className="rounded-2xl border border-dashed border-[#c7b6a1] p-4 text-sm text-[#716a62]">No comments yet. Start the family conversation.</p>}
           </div>
-          <form onSubmit={addComment} className="mt-4 flex items-end gap-2">
+          {!readOnly && <form onSubmit={addComment} className="mt-4 flex items-end gap-2">
             <label className="min-w-0 flex-1 text-sm font-bold text-[#514b45]">Add a comment
               <textarea value={commentBody} onChange={(input) => setCommentBody(input.target.value)} rows={2} maxLength={1000} className="mt-2 w-full rounded-xl border border-[#ded3c3] bg-white p-3 font-normal" placeholder="What do you think?" />
             </label>
             <button disabled={posting || !commentBody.trim()} className="grid size-12 shrink-0 place-items-center rounded-xl bg-[#c83b2f] text-white disabled:opacity-40" aria-label="Post comment"><Send size={18} /></button>
-          </form>
+          </form>}
         </section>
 
         {message && <p role="status" className="mt-4 rounded-xl bg-[#efe5d6] p-3 text-sm font-semibold text-[#655e56]">{message}</p>}

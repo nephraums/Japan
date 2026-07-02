@@ -84,10 +84,10 @@ async function main() {
   if (tripError) throw tripError;
 
   try {
-    const avatars = { Nigel: "🗻", Sarah: "🌸", Harrison: "🎮", Evelyn: "🍡" };
+    const avatars = { Nigel: "🗻", Sarah: "🌸", Harrison: "🎮", Evelyn: "🍡", Guest: "🧳" };
     const users = await insert(
       "family_users",
-      seed.users.map((user) => ({
+      [...seed.users, { display_name: "Guest", role: "guest" }].map((user) => ({
         trip_id: trip.id,
         display_name: user.display_name,
         role: user.role,
@@ -204,6 +204,11 @@ async function main() {
       p_pin: familyPin,
     });
     if (pinError) throw pinError;
+    const { error: guestPinError } = await supabase.rpc("set_guest_pin", {
+      p_trip_id: trip.id,
+      p_pin: "123456",
+    });
+    if (guestPinError && !guestPinError.message.includes("Could not find the function")) throw guestPinError;
   } catch (error) {
     await supabase.from("trips").delete().eq("id", trip.id);
     throw error;

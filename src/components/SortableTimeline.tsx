@@ -56,8 +56,8 @@ function displayTime(value: string) {
   return value.slice(0, 5);
 }
 
-function EventCard({ event, index, commentCount, factCount, onOpen }: { event: ItineraryEvent; index: number; commentCount: number; factCount: number; onOpen: () => void }) {
-  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: event.id });
+function EventCard({ event, index, commentCount, factCount, readOnly, onOpen }: { event: ItineraryEvent; index: number; commentCount: number; factCount: number; readOnly: boolean; onOpen: () => void }) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: event.id, disabled: readOnly });
   const style = { transform: CSS.Transform.toString(transform), transition };
   const mapUrl = itineraryMapUrl(event);
   const firstFlight = event.flight_details?.segments[0];
@@ -91,15 +91,17 @@ function EventCard({ event, index, commentCount, factCount, onOpen }: { event: I
             </div>
             <h3 className="font-japanese mt-2 text-lg font-bold leading-snug sm:text-xl">{event.title}</h3>
           </div>
-          <button
-            type="button"
-            className="grid size-11 shrink-0 touch-none place-items-center rounded-xl border border-[#ded3c3] bg-[#faf7f1] text-[#716a62] transition hover:border-[#c83b2f] hover:text-[#9f2a22] active:cursor-grabbing"
-            aria-label={`Move ${event.title}`}
-            {...attributes}
-            {...listeners}
-          >
-            <GripVertical size={21} aria-hidden="true" />
-          </button>
+          {!readOnly && (
+            <button
+              type="button"
+              className="grid size-11 shrink-0 touch-none place-items-center rounded-xl border border-[#ded3c3] bg-[#faf7f1] text-[#716a62] transition hover:border-[#c83b2f] hover:text-[#9f2a22] active:cursor-grabbing"
+              aria-label={`Move ${event.title}`}
+              {...attributes}
+              {...listeners}
+            >
+              <GripVertical size={21} aria-hidden="true" />
+            </button>
+          )}
         </div>
 
         {(event.start_point || event.end_point) && (
@@ -131,7 +133,7 @@ function EventCard({ event, index, commentCount, factCount, onOpen }: { event: I
             </a>
           )}
           <Link href={`/itinerary/event/${event.id}`} onClick={(clickEvent) => { clickEvent.preventDefault(); onOpen(); }} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-[#ded3c3] bg-white px-3 text-xs font-bold text-[#514b45] transition hover:border-[#c83b2f] hover:text-[#9f2a22]">
-            <Pencil size={15} aria-hidden="true" /> Edit
+            <Pencil size={15} aria-hidden="true" /> {readOnly ? "Details" : "Edit"}
           </Link>
           <Link href={`/itinerary/event/${event.id}#comments`} onClick={(clickEvent) => { clickEvent.preventDefault(); onOpen(); }} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-[#ded3c3] bg-white px-3 text-xs font-bold text-[#514b45] transition hover:border-[#c83b2f] hover:text-[#9f2a22]">
             <MessageCircle size={15} aria-hidden="true" /> {commentCount || "Comment"}
@@ -143,7 +145,7 @@ function EventCard({ event, index, commentCount, factCount, onOpen }: { event: I
   );
 }
 
-export function SortableTimeline({ initialEvents, initialComments, facts, profile, demo }: { initialEvents: ItineraryEvent[]; initialComments: EventComment[]; facts: PlaceFact[]; profile: FamilyProfile | null; demo: boolean }) {
+export function SortableTimeline({ initialEvents, initialComments, facts, profile, demo, readOnly = false }: { initialEvents: ItineraryEvent[]; initialComments: EventComment[]; facts: PlaceFact[]; profile: FamilyProfile | null; demo: boolean; readOnly?: boolean }) {
   const storageKey = `japan-2026-order-${initialEvents[0]?.date ?? "empty"}`;
   const [events, setEvents] = useState(initialEvents);
   const [comments, setComments] = useState(initialComments);
@@ -170,6 +172,7 @@ export function SortableTimeline({ initialEvents, initialComments, facts, profil
   const ids = useMemo(() => events.map((event) => event.id), [events]);
 
   async function handleDragEnd({ active, over }: DragEndEvent) {
+    if (readOnly) return;
     if (!over || active.id === over.id) return;
     const oldIndex = events.findIndex((event) => event.id === active.id);
     const newIndex = events.findIndex((event) => event.id === over.id);
@@ -206,7 +209,7 @@ export function SortableTimeline({ initialEvents, initialComments, facts, profil
   return (
     <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
       <p className="mb-3 flex min-h-5 items-center gap-2 text-xs font-semibold text-[#716a62]" aria-live="polite">
-        {message ? <><Clock3 size={14} aria-hidden="true" />{message}</> : "Drag a handle to rearrange this day. Times move with the available slots."}
+        {message ? <><Clock3 size={14} aria-hidden="true" />{message}</> : readOnly ? "Guest view is read-only. Open a card to view details and comments." : "Drag a handle to rearrange this day. Times move with the available slots."}
       </p>
       <SortableContext items={ids} strategy={verticalListSortingStrategy}>
         <div className="relative space-y-4 before:absolute before:bottom-8 before:left-[66px] before:top-8 before:w-px before:bg-[#d7cab9] sm:space-y-5 sm:before:left-[109px]">
@@ -217,6 +220,7 @@ export function SortableTimeline({ initialEvents, initialComments, facts, profil
               index={index}
               commentCount={comments.filter((comment) => comment.event_id === event.id).length}
               factCount={facts.filter((fact) => fact.itinerary_event_id === event.id).length}
+              readOnly={readOnly}
               onOpen={() => setOpenEventId(event.id)}
             />
           ))}
@@ -228,6 +232,7 @@ export function SortableTimeline({ initialEvents, initialComments, facts, profil
           comments={comments.filter((comment) => comment.event_id === openEventId)}
           profile={profile}
           demo={demo}
+          readOnly={readOnly}
           onClose={() => setOpenEventId(null)}
           onUpdated={(updated) => setEvents((current) => current.map((event) => event.id === updated.id ? updated : event))}
           onCommentAdded={(comment) => setComments((current) => [...current, comment])}
