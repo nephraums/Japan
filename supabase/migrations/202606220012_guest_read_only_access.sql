@@ -302,8 +302,8 @@ grant execute on function public.update_itinerary_event(uuid, text, text, time, 
 
 -- Retire older itinerary edit RPC signatures so guests cannot bypass the newer
 -- read-only check by calling a legacy overload directly.
-revoke all on function public.update_itinerary_event(uuid, text, text, time, time, text) from public, anon, authenticated;
-revoke all on function public.update_itinerary_event(uuid, text, text, time, time, text, text) from public, anon, authenticated;
+drop function if exists public.update_itinerary_event(uuid, text, text, time, time, text);
+drop function if exists public.update_itinerary_event(uuid, text, text, time, time, text, text);
 
 drop policy if exists "members add event comments" on public.comments;
 
